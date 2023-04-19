@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  eventmgt.api:
+    image: ${DOCKER_REGISTRY-}eventmgtapi
+    build:
+      context: .
+      dockerfile: EventMgt.API\Dockerfile
